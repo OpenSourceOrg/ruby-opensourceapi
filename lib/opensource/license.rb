@@ -1,14 +1,15 @@
-require "net/http"
-require "json"
+require 'net/http'
+require 'json'
+require 'hashie'
 
 module OpenSource
   class LicensesAPI
-    def initialize(base_url: "https://api.opensource.org")
+    def initialize(base_url: 'https://api.opensource.org')
       @base_url = base_url
     end
 
     def all
-      request "licenses/"
+      request 'licenses/'
     end
 
     def tagged(tag)

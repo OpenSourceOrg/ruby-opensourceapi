@@ -1,1 +1,1 @@
-require "opensource/license"
+require 'opensource/license'
