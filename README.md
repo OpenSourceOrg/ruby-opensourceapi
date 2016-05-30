@@ -12,7 +12,7 @@ require "opensource"
 
 licenses = OpenSource::Licenses.tagged :permissive
 licenses.each do |license|
-  puts license["name"]
+  puts license.name
 end
 ```
 
