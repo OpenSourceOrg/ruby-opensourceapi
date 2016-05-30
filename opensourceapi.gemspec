@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name          = 'opensourceapi'
-  gem.version       = '1.0.0'
+  gem.version       = '1.1.0'
   gem.summary       = 'API Bindings for the OSI Open Source License API'
   gem.description   = 'API Bindings for the OSI Open Source License API'
   gem.license       = 'MIT'
