@@ -24,8 +24,8 @@ module OpenSource
 
     def request(resource)
       response = Net::HTTP.get_response URI "#{@base_url}/#{resource}"
-      raise KeyError.new "Resource not found: #{resource}" unless response.is_a? Net::HTTPOK
-      JSON.parse response.body
+      raise KeyError, "Resource not found: #{resource}" unless response.is_a? Net::HTTPOK
+      JSON.parse(response.body).map { |o| Hashie::Mash.new o }
     end
   end
   Licenses = LicensesAPI.new

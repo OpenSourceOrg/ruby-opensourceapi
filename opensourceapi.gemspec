@@ -9,6 +9,8 @@ Gem::Specification.new do |gem|
   gem.email         = 'paultag@gmail.com'
   gem.homepage      = ''
 
+  gem.add_runtime_dependency 'hashie'
+
   gem.files         = Dir['lib/**/*.rb']
   gem.require_paths = ["lib"]
 end
